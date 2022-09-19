@@ -1,0 +1,21 @@
+import Navbar1 from "./Navbar";
+import Footer1 from "./Footer";
+import Gallery1 from "./Gallery";
+import Home1 from "./Home";
+import Login1 from "./Login";
+import Popular1 from "./Popular";
+import Review1 from "./Review";
+import Special1 from "./Special";
+import HowItWorks1 from "./HowItWorks";
+import Loader1 from "./Loader";
+
+export const Navbar = Navbar1;
+export const Footer = Footer1;
+export const Gallery = Gallery1;
+export const Home = Home1;
+export const Login = Login1;
+export const Popular = Popular1;
+export const Review = Review1;
+export const Special = Special1;
+export const HowItWorks = HowItWorks1;
+export const Loader = Loader1;
