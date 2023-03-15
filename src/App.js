@@ -15,12 +15,12 @@ import {
 function App() {
   const [loading, setLoading] = React.useState(false);
 
-  // React.useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 3000);
-  // }, []);
+  React.useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
   return (
     <main>
