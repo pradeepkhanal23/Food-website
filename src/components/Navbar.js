@@ -2,7 +2,7 @@ import React from "react";
 import { navlinks } from "../navlinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaUtensils } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineCloseSquare } from "react-icons/ai";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
@@ -11,10 +11,7 @@ const Navbar = () => {
   return (
     <nav id="nav" className="nav">
       <div className="nav-wrapper">
-        <a
-          href="https://food-website-mr-web-designer.netlify.app/"
-          className="nav-header"
-        >
+        <a href="#home" className="nav-header">
           <FaUtensils id="logo" />
           <span>Food</span>
         </a>
@@ -54,7 +51,7 @@ const Navbar = () => {
                   );
                 })}
               </ul>
-              <AiOutlineClose
+              <AiOutlineCloseSquare
                 onClick={() => {
                   setOpen(false);
                 }}

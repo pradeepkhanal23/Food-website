@@ -1,9 +1,14 @@
 import React from "react";
 import { popularFoods } from "../popular-foods";
+import {
+  AiOutlineClockCircle,
+  AiOutlineStar,
+  AiOutlineFire,
+} from "react-icons/ai";
 
 const Popular = () => {
   return (
-    <section id="popular">
+    <section id="popular" className="popular">
       <div className="popular-wrapper">
         <h2 className="popular-title">
           Our <span>Popular</span> Dishes
@@ -13,16 +18,24 @@ const Popular = () => {
             const { id, image_url, title } = item;
             return (
               <article key={id} className="popular-food">
-                <img src={image_url} alt={title} className="p-img" />
-                <h3>{title}</h3>
-                <div className="ratings">
-                  <span>&#9733; </span>
-                  <span>&#9733; </span>
-                  <span>&#9733; </span>
-                  <span>&#9733; </span>
-                  <span>&#9734; </span>
+                <div className="popular-img-container">
+                  <img src={image_url} alt={title} className="p-img" />
                 </div>
-                <span className="price">$5-$20</span>
+                <h3>{title}</h3>
+                <div className="additional-info">
+                  <div className="clock">
+                    <AiOutlineClockCircle />
+                    <p>50min</p>
+                  </div>
+                  <div className="star">
+                    <AiOutlineStar />
+                    <p> 4.5</p>
+                  </div>
+                  <div className="fire">
+                    <AiOutlineFire />
+                    <p>325 Cal</p>
+                  </div>
+                </div>
                 <button className="btn">Order Now</button>
               </article>
             );

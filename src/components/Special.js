@@ -1,10 +1,9 @@
 import React from "react";
 import { specialFoods } from "../special-foods";
 
-
 const Special = () => {
   return (
-    <section id="special">
+    <section id="special" className="special">
       <div className="special-wrapper">
         <h2 className="special-title">
           Our <span>Special</span> Dishes
@@ -20,9 +19,9 @@ const Special = () => {
                   className="overlay-image"
                 />
                 <div className="content">
-                  <img src={image_url} alt={title} className="s-img" />
-                  <h3 className="s-title">{title}</h3>
-                  <p className="s-desc">{desc}</p>
+                  <img src={image_url} alt={title} />
+                  <h3>{title}</h3>
+                  <p>{desc}</p>
                 </div>
               </article>
             );

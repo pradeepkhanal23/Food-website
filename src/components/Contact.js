@@ -1,11 +1,11 @@
 import React from "react";
 import OrderImg from "../images/order-img.jpg";
 
-const Login = () => {
+const Contact = () => {
   return (
-    <section id="login" className="login">
-      <h2 className="login-heading">
-        <span>Order</span> Now
+    <section id="contact" className="contact">
+      <h2>
+        <span>Contact</span> Now
       </h2>
       <article className="row">
         <div className="image-container">
@@ -24,13 +24,11 @@ const Login = () => {
             placeholder="Enter your address here...."
             className="text-area"
           ></textarea>
-          <a href="#" className="btn login-btn">
-            Order Now
-          </a>
+          <button className="btn">Order Now</button>
         </form>
       </article>
     </section>
   );
 };
 
-export default Login;
+export default Contact;

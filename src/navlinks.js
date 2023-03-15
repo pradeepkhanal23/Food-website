@@ -16,17 +16,22 @@ export const navlinks = [
   },
   {
     id: 4,
+    pagename: "Order",
+    linkId: "how-it-works",
+  },
+  {
+    id: 5,
     pagename: "Gallery",
     linkId: "gallery",
   },
   {
-    id: 5,
+    id: 6,
     pagename: "Reviews",
     linkId: "review",
   },
   {
-    id: 6,
-    pagename: "Order",
-    linkId: "login",
+    id: 7,
+    pagename: "Contact",
+    linkId: "contact",
   },
 ];

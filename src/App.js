@@ -4,7 +4,7 @@ import {
   Home,
   Popular,
   Special,
-  Login,
+  Contact,
   Footer,
   Gallery,
   Review,
@@ -35,7 +35,7 @@ function App() {
           <HowItWorks />
           <Gallery />
           <Review />
-          <Login />
+          <Contact />
           <Footer />
         </>
       )}

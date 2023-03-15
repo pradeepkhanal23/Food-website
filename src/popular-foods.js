@@ -9,7 +9,7 @@ export const popularFoods = [
   {
     id: "1",
     image_url: TastyBurger,
-    title: "Tasty Burger",
+    title: "Special Burger",
   },
   {
     id: "2",
@@ -19,12 +19,12 @@ export const popularFoods = [
   {
     id: "3",
     image_url: TastySweets,
-    title: "Tasty Sweets",
+    title: "Sweets",
   },
   {
     id: "4",
     image_url: TastyCupcake,
-    title: "Tasty Cupcake",
+    title: "Yummy Cupcake",
   },
   {
     id: "5",
@@ -34,6 +34,6 @@ export const popularFoods = [
   {
     id: "6",
     image_url: ColdIceCream,
-    title: "Cold Ice-Cream",
+    title: "Flavoured Ice-Cream",
   },
 ];
