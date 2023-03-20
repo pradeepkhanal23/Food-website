@@ -2,11 +2,10 @@ import React from "react";
 import { navlinks } from "../navlinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaUtensils } from "react-icons/fa";
-import { AiOutlineCloseSquare } from "react-icons/ai";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
-  // const [active, setActive] = React.useState(false);
 
   return (
     <nav id="nav" className="nav">
@@ -34,31 +33,24 @@ const Navbar = () => {
           />
         </div>
 
-        {open && (
-          <>
-            <div className={`${open ? "sliding-menu open" : "sliding-menu"}`}>
-              <ul className="sliding-menu-navlinks">
-                {navlinks.map((link) => {
-                  return (
-                    <li key={link.id}>
-                      <a
-                        href={`#${link.linkId}`}
-                        onClick={() => setOpen(false)}
-                      >
-                        {link.pagename}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-              <AiOutlineCloseSquare
-                onClick={() => {
-                  setOpen(false);
-                }}
-              />
-            </div>
-          </>
-        )}
+        <div className={`${open ? "sliding-menu open" : "sliding-menu"}`}>
+          <ul className="sliding-menu-navlinks">
+            {navlinks.map((link) => {
+              return (
+                <li key={link.id}>
+                  <a href={`#${link.linkId}`} onClick={() => setOpen(false)}>
+                    {link.pagename}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <AiOutlineClose
+            onClick={() => {
+              setOpen(false);
+            }}
+          />
+        </div>
       </div>
     </nav>
   );
