@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 :root {
@@ -21,7 +22,12 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   height: 100%;
-  font-size: 22px;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -299,6 +305,7 @@ button.btn {
 .special-wrapper h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 .special-wrapper span {
   color: var(--primary);
@@ -360,6 +367,7 @@ article.special-food:hover .overlay-image {
 .special-food p {
   color: var(--secondary);
   text-align: center;
+  font-size: 0.9rem;
 }
 
 /* ----------Special Section Ends---------------- */
@@ -376,6 +384,7 @@ article.special-food:hover .overlay-image {
 .popular h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.8rem;
 }
 
 .popular-title span {
@@ -386,7 +395,6 @@ article.special-food:hover .overlay-image {
 .popular-foods {
   display: flex;
   flex-wrap: wrap;
-
   margin: 0rem auto;
 }
 
@@ -484,6 +492,7 @@ img.p-img {
 .hiw-title {
   text-align: center;
   padding-bottom: 3rem;
+  font-size: 1.8rem;
 }
 
 .order-steps {
@@ -546,12 +555,31 @@ img.p-img {
 /* ------Gallery section starts here--------- */
 
 .gallery {
-  margin: 1rem auto;
+  padding: 1rem;
   min-height: 100vh;
+  width: 100%;
+  margin: 0rem auto;
+}
+
+.gallery h2 {
+  margin-bottom: 1rem;
+}
+
+.gallery-images {
+  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 95%;
+  flex-wrap: wrap;
+}
+
+.gallery-images img {
+  border-radius: 5px;
+  height: auto;
+  width: 500px;
+  object-fit: contain;
+  margin: 1rem;
+  padding: 10px;
+  box-shadow: var(--box-shadow);
 }
 
 .gallery span {
@@ -559,22 +587,9 @@ img.p-img {
 }
 
 .gallery-title {
-  padding-top: 5rem;
+  padding-top: 4rem;
   text-align: center;
-}
-
-.gallery-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery-wrapper img {
-  transform: scale(0.95);
-  flex: 1;
-  padding: 0.5rem;
-  box-shadow: var(--box-shadow);
-  border-radius: 5px;
-  object-fit: cover;
+  font-size: 1.8rem;
 }
 
 /* ------Gallery section ends here--------- */
@@ -584,13 +599,14 @@ img.p-img {
 #review {
   padding-top: 5rem;
   min-height: 100vh;
-  width: 100%;
+  width: 98%;
   margin: 0rem auto;
 }
 
 .review h2 {
   text-align: center;
   padding-bottom: 4rem;
+  font-size: 1.8rem;
 }
 
 .review-title span {
@@ -667,6 +683,7 @@ h2.heading {
 
 .contact h2 {
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .contact span {
@@ -710,18 +727,19 @@ input {
   width: 100%;
   height: 3rem;
   flex: 1 1 40%;
-}
-
-input::placeholder {
-  /* padding-left: 1rem; */
+  text-align: left;
   padding: 1rem 0.8rem;
+}
+
+input::placeholder,
+textarea::placeholder {
   font-size: 0.8rem;
   font-family: var(--font-family);
 }
 
-textarea::placeholder {
-  font-family: var(--font-family);
-  font-size: 0.8rem;
+input:focus,
+textarea:focus {
+  border: 2px solid var(--primary);
 }
 
 .text-area {
@@ -774,12 +792,12 @@ textarea::placeholder {
 
 .social-links a {
   color: white;
-  transform: scale(2);
+  transform: scale(1.5);
   margin: 0rem 1rem;
 }
 
 .social-links a:hover {
-  transform: scale(2.5);
+  transform: scale(2);
   transition: transform 0.5 ease;
 }
 
@@ -891,6 +909,16 @@ textarea::placeholder {
 
   /* ----food gallery-------- */
 
+  .gallery-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .gallery-img img {
+    height: 100%;
+    width: 100%;
+  }
   /* ---------testimonial-------------- */
 
   /* .review .testimonials .testimony:first-child {
@@ -991,8 +1019,27 @@ textarea::placeholder {
     justify-content: center;
   }
 
-  .gallery-wrapper img {
-    display: grid;
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimony {
+    transform: scale(0.8);
+  }
+
+  .gallery-images {
+    display: block;
+    margin: 0rem auto;
     width: 100%;
+  }
+
+  .gallery img {
+    margin: 0;
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }

@@ -7,10 +7,14 @@ const Gallery = () => {
       <h2 className="gallery-title">
         Our Food <span>Gallery</span>
       </h2>
-      <div className="gallery-wrapper">
+      <div className="gallery-images">
         {FoodGallery.map((item) => {
           const { id, image_url } = item;
-          return <img src={image_url} alt="gallery-images" key={id} />;
+          return (
+            <>
+              <img src={image_url} alt="gallery photos" key={id} />
+            </>
+          );
         })}
       </div>
     </section>
