@@ -11,9 +11,9 @@ const Gallery = () => {
         {FoodGallery.map((item) => {
           const { id, image_url } = item;
           return (
-            <>
-              <img src={image_url} alt="gallery photos" key={id} />
-            </>
+            <div key={id}>
+              <img src={image_url} alt="gallery photos" />
+            </div>
           );
         })}
       </div>
