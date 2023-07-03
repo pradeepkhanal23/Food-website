@@ -2,7 +2,7 @@ import React from "react";
 import { navlinks } from "../navlinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaUtensils } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+import { RiCloseFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [open, setOpen] = React.useState(false);
@@ -45,7 +45,7 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <AiOutlineClose
+          <RiCloseFill
             onClick={() => {
               setOpen(false);
             }}

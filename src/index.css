@@ -113,11 +113,14 @@ ul.navlinks.active {
   color: var(--primary);
 }
 
-.nav-links li a:hover,
+.nav-links li a:hover {
+  color: var(--primary);
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
 .nav-links li a:active {
   color: var(--primary);
-  transform: scale3d(1.2);
-  transition: transform 0.3s ease;
 }
 
 .sliding-menu {

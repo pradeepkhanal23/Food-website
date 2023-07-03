@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Food Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for a food website,inspired by the design of Mr. Web Designer[https://www.buymeacoffee.com/mrwebdesigner]. The website showcases various food items and provides information about the food menu, popular foods, special foods and ordering options.
 
-## Available Scripts
+![Food Website](./src/images/food-website.png)
 
-In the project directory, you can run:
+## Acknowledgements
 
-### `npm start`
+I would like to express my gratitude to Mr. Web Designer for providing the design idea and the links to the assets that served as the inspiration for this project. The design elements and visual style greatly influenced the development of this website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- YouTube Channel: [Mr. Web Designer](https://www.youtube.com/@MrWebDesignerAnas)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The following assets were utilized in this project:
 
-### `npm test`
+- Google Fonts: https://fonts.google.com/
+- React Icons: [Icon source](https://react-icons.github.io/react-icons/)
+- Images: [Image source](https://www.freepik.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Browse through a visually appealing collection of food items.
+- Access detailed information about each food item, including descriptions and nutritional information, time for the preparationa and ratings.
+- Place orders for food items through the website.
+- Responsive design, ensuring optimal viewing experience on different devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- HTML
+- CSS
+- React
+- CRA(Create React App)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To run the food website locally, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository: `git clone https://github.com/pradeepkhanal23/Food-website.git`
+2. Navigate to the project directory: `cd Food-website`
+3. Open the `index.html` file in your web browser.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Open the website in your browser.
+2. Browse through the food items by navigating the menu.
+3. Click on a food item to view more details, including descriptions and images, and how to order them.
+4. Explore the popular and special section to discover various options and special deals.
+5. Place an order for your desired food items using the provided ordering options.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## License
 
-## Learn More
+This project is licensed under the [MIT License](LICENSE).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any questions or suggestions, feel free to reach out to the project maintainer.
 
-### Code Splitting
+## Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://restaurant-website-pradeep.netlify.app/
