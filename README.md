@@ -2,6 +2,8 @@
 
 This repository contains the code for a food website,inspired by the design of Mr. Web Designer[https://www.buymeacoffee.com/mrwebdesigner]. The website showcases various food items and provides information about the food menu, popular foods, special foods and ordering options.
 
+**Note:** This is just a design site with no any functionalities however, it can be made dymanic in the future with a added integration of a backend or a database.
+
 ![Food Website](./src/images/food-website.png)
 
 ## Acknowledgements
@@ -19,8 +21,8 @@ The following assets were utilized in this project:
 ## Features
 
 - Browse through a visually appealing collection of food items.
-- Access detailed information about each food item, including descriptions and nutritional information, time for the preparationa and ratings.
-- Place orders for food items through the website.
+- Browse detailed information about each food item, including descriptions and nutritional information, time for the preparationa and ratings.
+- Visual instructions for processing orders for food items through the website.
 - Responsive design, ensuring optimal viewing experience on different devices.
 
 ## Technologies Used
@@ -42,9 +44,8 @@ To run the food website locally, follow these steps:
 
 1. Open the website in your browser.
 2. Browse through the food items by navigating the menu.
-3. Click on a food item to view more details, including descriptions and images, and how to order them.
-4. Explore the popular and special section to discover various options and special deals.
-5. Place an order for your desired food items using the provided ordering options.
+3. Explore the popular and special section to discover various options and special deals.
+4. A form has been integrated to mimic the order placement process of your desired food items using the provided ordering options.
 
 ## License
 
